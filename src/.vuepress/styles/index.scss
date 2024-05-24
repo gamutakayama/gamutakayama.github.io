@@ -1,0 +1,15 @@
+.theme-container {
+  &:not(.has-toc) {
+    .vp-toggle-sidebar-button {
+      display: none;
+    }
+  }
+}
+
+.vp-project-card {
+  padding: 16px 12px;
+}
+
+.vp-project-desc {
+  display: none;
+}
