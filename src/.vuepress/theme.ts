@@ -35,8 +35,6 @@ export default hopeTheme(
           icon: "/assets/icons/apple-icon-180.png",
           statusBarColor: "white",
         },
-        cacheHTML: true,
-        cacheImage: true,
         manifest: {
           icons: [
             {
