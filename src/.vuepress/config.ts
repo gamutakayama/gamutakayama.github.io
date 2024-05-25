@@ -24,7 +24,6 @@ export default defineUserConfig({
   dest: "build",
   head,
   lang: "zh-CN",
-  shouldPrefetch: false,
   theme,
   title: "我梦的笔记本",
 });
