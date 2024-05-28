@@ -41,3 +41,37 @@ $ sudo firewall-cmd --reload
 ```bash
 $ sudo firewall-cmd --remove-port=6666/tcp --permanent
 ```
+
+## 定时任务
+
+查看当前用户的 crontab 文件
+
+```bash
+$ crontab -l
+```
+
+编辑当前用户的 crontab 文件
+
+```bash
+$ crontab -e
+```
+
+移除当前用户的 crontab 文件
+
+```bash
+$ crontab -r
+```
+
+查看某个用户的 crontab 文件
+
+```bash
+$ crontab -u foobar -l
+```
+
+编辑某个用户的 crontab 文件
+
+```bash
+$ crontab -u foobar -e
+```
+
+[在线工具](https://tool.lu/crontab)
