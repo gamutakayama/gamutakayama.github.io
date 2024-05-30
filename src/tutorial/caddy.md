@@ -146,11 +146,11 @@ volumes:
 启动
 
 ```bash
-docker compose up -d
+$ docker compose up -d
 ```
 
 停止
 
 ```bash
-docker compose down
+$ docker compose down
 ```

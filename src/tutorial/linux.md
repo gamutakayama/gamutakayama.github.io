@@ -74,4 +74,10 @@ $ crontab -u foobar -l
 $ crontab -u foobar -e
 ```
 
+日志
+
+```bash
+$ tail -f /var/log/syslog | grep CRON
+```
+
 [在线工具](https://tool.lu/crontab)
