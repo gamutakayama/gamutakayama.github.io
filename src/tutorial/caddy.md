@@ -133,7 +133,7 @@ volumes:
 
 在 `compose.yml` 旁边创建一个名为 `Caddyfile` 的配置文件，并写入相关内容。
 
-在 `compose.yml` 旁边创建一个名为 `site` 的目录，将静态文件放入其中，然后使用 `root * /srv` 设置根目录。
+如果有静态文件，在 `compose.yml` 旁边创建一个名为 `site` 的目录，将静态文件放入其中，然后使用 `root * /srv` 设置根目录。
 
 ::: tip 反向代理
 

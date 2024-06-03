@@ -1,6 +1,6 @@
 ---
 title: 体重
-date: 2023-09-08 12:34:56
+date: 2023-04-12 12:34:56
 category:
   - 其他
 order: 3
@@ -23,7 +23,7 @@ const data = weightList.reduce((accumulator, currentValue) => {
 }, {});
 
 const lineData = [];
-const start = new Date(2023, 3, 12).getTime();
+const start = new Date(2023, 3, 11).getTime();
 const end = Date.now();
 let current = start;
 while (current < end - 24 * 60 * 60 * 1000) {
@@ -45,7 +45,7 @@ const option = {
       brushSelect: false,
       end: 100,
       labelFormatter: (value) => formatTimestamp(Math.round(value)),
-      minSpan: 5,
+      minSpan: 2,
       start: 0,
     },
   ],
@@ -61,6 +61,19 @@ const option = {
         ],
         silent: true,
         symbol: ["none", "none"],
+      },
+      markPoint: {
+        data: [
+          { name: "Max", type: "max" },
+          {
+            label: { offset: [0, 8] },
+            name: "Min",
+            symbolRotate: 180,
+            type: "min",
+          },
+        ],
+        label: { fontSize: 10, offset: [0, -1] },
+        symbolSize: 40,
       },
       smooth: true,
       showSymbol: false,
