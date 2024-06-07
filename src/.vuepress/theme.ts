@@ -19,6 +19,7 @@ export default hopeTheme(
     metaLocales: {
       toc: "目录",
     },
+    navbarAutoHide: "none",
     pageInfo: ["Date", "Category", "Tag"],
     plugins: {
       blog: true,
