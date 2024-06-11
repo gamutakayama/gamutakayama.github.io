@@ -42,6 +42,27 @@ $ sudo firewall-cmd --reload
 $ sudo firewall-cmd --remove-port=6666/tcp --permanent
 ```
 
+## BBR
+
+开启
+
+```bash
+$ echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
+$ echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
+```
+
+重新加载
+
+```bash
+$ sysctl -p
+```
+
+测试是否已开启，输出中包含 `bbr` 即为已开启
+
+```bash
+$ sysctl net.ipv4.tcp_available_congestion_control
+```
+
 ## 定时任务
 
 查看当前用户的 crontab 文件
