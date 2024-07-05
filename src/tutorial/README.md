@@ -9,3 +9,5 @@ dir:
 - [Caddy](caddy.md)
 
 - [Linux](linux.md)
+
+- [Rclone](rclone.md)
