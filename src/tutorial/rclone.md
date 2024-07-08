@@ -216,7 +216,7 @@ eyJ0b2tl************************************************************************
 <---End paste
 ```
 
-13. 输入 `n`
+13. 输入 `n` 或者按 <kbd>Enter</kbd> 键使用默认值 `n`
 
 ```text{5}
 Configure this as a Shared Drive (Team Drive)?
