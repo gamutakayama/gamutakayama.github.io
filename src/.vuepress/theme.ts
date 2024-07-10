@@ -10,6 +10,7 @@ export default hopeTheme(
       articleInfo: ["Date", "Category", "Tag"],
     },
     contributors: false,
+    darkmode: "disable",
     displayFooter: true,
     docsDir: "src",
     hideSiteNameOnMobile: false,
