@@ -51,6 +51,7 @@ const option = {
   ],
   series: [
     {
+      connectNulls: true,
       data: lineData,
       markLine: {
         data: [

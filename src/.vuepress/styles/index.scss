@@ -4,6 +4,12 @@
       display: none;
     }
   }
+
+  &.has-toc {
+    .vp-toggle-navbar-button {
+      display: none;
+    }
+  }
 }
 
 .vp-project-card {
